@@ -1,6 +1,6 @@
 'use strict'
 
-var fetch = require('node-fetch');
+let fetch = require('node-fetch');
 
 class Wechat {
   constructor(config) {
