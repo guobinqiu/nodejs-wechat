@@ -6,7 +6,6 @@
 Will output like below:
 
 ```
-$ node main
 {
     "list": [
         {
