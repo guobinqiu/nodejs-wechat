@@ -8,6 +8,6 @@ let config = {
 }
 
 let wechat = new Wechat(config);
-wechat.getUserSummary("2017-05-01", "2017-05-05").then(function(data) {
+wechat.getUserSummary("2017-05-01", "2017-05-05").then(data => {
     console.log(JSON.stringify(data, null, 4));
 });
