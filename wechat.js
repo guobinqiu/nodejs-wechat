@@ -1,6 +1,6 @@
 'use strict'
 
-let fetch = require('node-fetch');
+let fetch = require('node-fetch')
 let debug = require('debug')('wechat')
 
 const SOURCES_NAMES = {
@@ -14,17 +14,17 @@ const SOURCES_NAMES = {
 
 class Wechat {
   constructor(config) {
-    this.config = config;
+    this.config = config
   }
 
   getAccessToken() {
     return new Promise((resolve, reject) => {
       fetch('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=' + this.config['app_id'] + '&secret=' + this.config['app_secret']).then(function(res) {
-        return res.text();
+        return res.text()
       }).then(function(body) {
-        resolve(JSON.parse(body)['access_token']);
-      });
-    });
+        resolve(JSON.parse(body)['access_token'])
+      })
+    })
   }
 
   // http://admin.wechat.com/wiki/index.php?title=Followers_Data_API
@@ -41,11 +41,11 @@ class Wechat {
     return new Promise((resolve, reject) => {
       fetch('https://api.weixin.qq.com/datacube/getusersummary?access_token=' + access_token, opts).
       then(function(res) {
-        return res.text();
+        return res.text()
       }).then(function(body) {
-        resolve(JSON.parse(body));
-      });
-    });
+        resolve(JSON.parse(body))
+      })
+    })
   }
 
   _process(data) {
@@ -65,11 +65,11 @@ class Wechat {
   async getUserSummary(begin_date, end_date) {
     // TODO - check date range is < 7 days
     // otherwise split into multiple calls
-    let access_token = await this.getAccessToken();
-    let summary = await this._getUserSummary(access_token, begin_date, end_date);
+    let access_token = await this.getAccessToken()
+    let summary = await this._getUserSummary(access_token, begin_date, end_date)
     summary = this._process(summary)
-    return summary;
+    return summary
   }
 }
 
-module.exports = Wechat;
+module.exports = Wechat

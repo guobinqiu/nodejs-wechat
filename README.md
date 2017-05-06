@@ -1,7 +1,7 @@
 # node_wechat
 
-1. [Fill in your APP_ID, APP_SECRET](https://github.com/guobinqiu/node_wechat/blob/master/main.js#L5-L8)
-2. run `node main`
+1. create a file in config/APPNAME.json
+2. run `npm start`
 
 Will output like below:
 
@@ -29,10 +29,13 @@ Will output like below:
     ]
 }
 ```
+
+note that you can only get up to 7 days of data in one request
+http://admin.wechat.com/wiki/index.php?title=Followers_Data_API
+
 ---
 
 Supported by Nodejs 7+
 > How to install?
 + https://github.com/creationix/nvm/blob/master/README.md (Recommended!)
 + https://nodejs.org/en/ (Download manully)
-
