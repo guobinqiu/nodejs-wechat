@@ -9,9 +9,9 @@ class Wechat {
 
   getAccessToken() {
     return new Promise((resolve, reject) => {
-      fetch('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=' + this.config['app_id'] + '&secret=' + this.config['app_secret']).then(function(res) {
+      fetch('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=' + this.config['app_id'] + '&secret=' + this.config['app_secret']).then((res) => {
         return res.text();
-      }).then(function(body) {
+      }).then((body) => {
         resolve(JSON.parse(body)['access_token']);
       });
     });
@@ -25,9 +25,9 @@ class Wechat {
            "begin_date": begin_date,
            "end_date": end_date,
          })
-       }).then(function(res) {
+       }).then((res) => {
         return res.text();
-      }).then(function(body) {
+      }).then((body) => {
         resolve(JSON.parse(body));
       });
     });
