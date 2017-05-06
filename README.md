@@ -28,7 +28,6 @@ Will output like below:
         }
     ]
 }
-
 ```
 ---
 
