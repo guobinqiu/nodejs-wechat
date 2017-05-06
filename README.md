@@ -1,7 +1,8 @@
 # node_wechat
 
-1. create a file in config/APPNAME.json
-2. run `npm start`
+- create a file in config/APPNAME.json and add APP_ID and APP_SECRET
+- `npm install`
+- `npm start`
 
 Will output like below:
 
