@@ -34,5 +34,5 @@ Will output like below:
 Supported by Nodejs 7+
 > How to install?
 + https://github.com/creationix/nvm/blob/master/README.md (Recommended!)
-+ https://nodejs.org/en/
++ https://nodejs.org/en/ (Download manully)
 
