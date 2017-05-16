@@ -1,8 +1,8 @@
 import { Wechat } from './wechat';
 
 export interface IConfig {
-    app_id: string;
-    app_secret: string;
+  app_id: string;
+  app_secret: string;
 }
 
 let config: IConfig = {
