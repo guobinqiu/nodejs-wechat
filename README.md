@@ -1,8 +1,7 @@
 # node_wechat
 
-1. npm install
-2. [Fill in your APP_ID, APP_SECRET](https://github.com/guobinqiu/node_wechat/blob/master/main.js#L5-L8)
-3. run `node main`
+1. [Fill in your APP_ID, APP_SECRET](https://github.com/guobinqiu/node_wechat/blob/master/main.js#L5-L8)
+2. run `make`
 
 Will output like below:
 
