@@ -1,6 +1,6 @@
 # node_wechat
 
-1. [Fill in your APP_ID, APP_SECRET](https://github.com/guobinqiu/node_wechat/blob/master/main.js#L5-L8)
+1. [Fill in your APP_ID, APP_SECRET](https://github.com/guobinqiu/node_wechat/blob/master/main.js#L9-L10)
 2. run `make`
 
 Will output like below:
