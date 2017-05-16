@@ -6,8 +6,8 @@ export interface IConfig {
 }
 
 let config: IConfig = {
-  app_id: 'wxdc02ed9004592908',
-  app_secret: '2ecd9ee0f11b5444292317b8ef821c98',
+  app_id: '<YOUR_APP_ID>',
+  app_secret: '<YOUR_APP_SECRET>',
 };
 
 let wechat: Wechat = new Wechat(config);
