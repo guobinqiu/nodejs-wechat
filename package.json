@@ -1,7 +1,7 @@
 {
   "name": "node_wechat",
-  "version": "1.0.0",
-  "description": "1. [Fill in your APP_ID, APP_SECRET](https://github.com/guobinqiu/node_wechat/blob/master/main.js#L5-L8) 2. run `node main`",
+  "version": "1.0.1",
+  "description": "nodejs wechat test",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
