@@ -1,3 +1,6 @@
+随便玩玩
+===
+
 # node_wechat
 
 1. [Fill in your APP_ID, APP_SECRET](https://github.com/guobinqiu/node_wechat/blob/master/src/main.ts#L9-L10)
