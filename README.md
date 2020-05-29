@@ -1,12 +1,10 @@
-随便玩玩
+Nodejs for wechat
 ===
-
-# node_wechat
 
 1. [Fill in your APP_ID, APP_SECRET](https://github.com/guobinqiu/node_wechat/blob/master/src/main.ts#L9-L10)
 2. run `make`
 
-Will output like below:
+Output as follows:
 
 ```
 {
@@ -32,10 +30,3 @@ Will output like below:
     ]
 }
 ```
----
-
-Supported by Nodejs 7+
-> How to install?
-+ https://github.com/creationix/nvm/blob/master/README.md (Recommended!)
-+ https://nodejs.org/en/ (Download manully)
-
